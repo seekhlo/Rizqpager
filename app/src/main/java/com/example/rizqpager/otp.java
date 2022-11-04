@@ -107,9 +107,16 @@ public class otp extends AppCompatActivity {
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            a = inputfield.getText().toString();
-            a = a.substring(0, a.length()-1);
-            inputfield.setText(a);
+                a = inputfield.getText().toString();
+                if(a.equals("")){
+
+                    inputfield.setText("");
+
+                }
+                else {
+                    a = a.substring(0, a.length()-1);
+                    inputfield.setText(a);
+                }
             }
         });
     }
