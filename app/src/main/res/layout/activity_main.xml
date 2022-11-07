@@ -19,6 +19,7 @@
         android:text="GetStarted"
         android:id="@+id/getstarted"
 
+
         />
 
     <LinearLayout
