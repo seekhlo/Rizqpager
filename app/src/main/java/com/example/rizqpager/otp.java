@@ -137,7 +137,7 @@ public class otp extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editable) {
                 if(inputfield.length() == 4){
-                    Intent intent = new Intent(getApplicationContext(), termsandcondition.class);
+                    Intent intent = new Intent(getApplicationContext(), checkbox.class);
                     startActivity(intent);
             }}
         });

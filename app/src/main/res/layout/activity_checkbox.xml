@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".termsandconditions">
-<ImageView
-    android:id="@+id/imagearrow"
-    android:layout_width="50dp"
-    android:layout_height="50dp"
+    tools:context=".checkbox">
+    <ImageView
+        android:id="@+id/imagearrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
 
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
-    />
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -231,8 +231,8 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginBottom="20dp"
-        android:gravity="start"
-        app:layout_constraintBottom_toTopOf="@+id/continuebutton5"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonlast"
         app:layout_constraintStart_toStartOf="parent">
 
         <CheckBox
@@ -251,7 +251,7 @@
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/usama1"
+        android:id="@+id/buttonlast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -285,5 +285,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

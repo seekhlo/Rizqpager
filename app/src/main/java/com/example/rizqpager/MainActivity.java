@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button getStartedBtn;
     private ImageView[] dots;
     ArrayList<Integer> arrayList = new ArrayList<>();
+    ArrayList<String> stringArrayList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -28,12 +29,17 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(R.drawable.first);
         arrayList.add(R.drawable.forth);
         arrayList.add(R.drawable.third);
-        MyAdapter myAdapter = new MyAdapter(MainActivity.this, arrayList);
+        stringArrayList.add("Get yourself a loan with 30% Profit");
+        stringArrayList.add("Imran Khan, the X Prime Minister of Pakistan");
+        stringArrayList.add("There is nothing like Time travel in today's world. Can't say anything about future and past");
+        MyAdapter myAdapter = new MyAdapter(MainActivity.this, arrayList, stringArrayList);
         viewPager.setAdapter(myAdapter);
         sliderDotspanel = findViewById(R.id.sliderdots);
         dotscount = myAdapter.getCount();
         dots = new ImageView[dotscount];
         getStartedBtn = findViewById(R.id.getstarted);
+
+
 
         for(int i = 0; i < dotscount; i++){
 
